@@ -1,0 +1,12 @@
+{
+    "permissions": {
+        "allow": [
+            "Bash(gh api:*)",
+            "Bash(pixi --version)",
+            "Bash(pixi install:*)",
+            "Bash(pixi run:*)",
+            "Bash(git add:*)",
+            "Bash(git commit:*)"
+        ]
+    }
+}
