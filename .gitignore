@@ -52,3 +52,8 @@ Thumbs.db
 
 # Claude Code
 CLAUDE.local.md
+.claude/settings.local.json
+
+# Codex CLI
+.codex/hooks/config/hooks-config.local.json
+.codex/hooks/logs/*.jsonl
