@@ -253,9 +253,7 @@ Claude Code がコードベースを探索し、`plans/add-user-authentication.m
 
 ```
 $ codex
-> plans/add-user-authentication.md の計画をレビューして。
-  コードベースと照合し、見落としや問題があれば
-  "Codex Finding" として追記して。元のフェーズは書き換えないで。
+> plans/add-user-authentication.md の計画をレビューして。コードベースと照合し、見落としや問題があれば "Codex Finding" として追記して。元のフェーズは書き換えないで。
 ```
 
 Codex CLI が計画をコードベースと照合し、以下を検証する:
@@ -282,8 +280,7 @@ $ claude                  ← 新セッションで起動 (コンテキストを
 
 ```
 $ codex
-> plans/add-user-authentication.md の計画と実装を照合して。
-  未実装のフェーズや計画との乖離があれば指摘して。
+> plans/add-user-authentication.md の計画と実装を照合して。未実装のフェーズや計画との乖離があれば指摘して。
 ```
 
 Codex CLI が実装結果を計画と照合し、以下を検証する:
