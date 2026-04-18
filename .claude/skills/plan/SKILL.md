@@ -12,8 +12,7 @@ argument-hint: "[feature name or description]"
 # Plan: フェーズ分割された実装計画の作成
 
 4 ステップ cross-model サイクルの Step 1。
-Claude Code が計画を `plans/{feature-name}.md` に書き出し、
-次のステップで Codex CLI (Terminal 2) がレビューできる形にする。
+Claude Code が計画を `plans/{YYYY-MM-DD}_{feature-name}.md` に書き出し、次のステップで Codex CLI (Terminal 2) がレビューできる形にする。
 
 ## Context: $ARGUMENTS
 
@@ -38,7 +37,7 @@ feature-name はケバブケース (例: `add-user-authentication`, `refactor-ca
 
 ### Step 3: 計画ファイルを生成する
 
-`plans/{feature-name}.md` に以下の構造で書き出す:
+`plans/{YYYY-MM-DD}_{feature-name}.md` に以下の構造で書き出す:
 
 ```markdown
 # Plan: {feature-name}
@@ -87,13 +86,11 @@ feature-name はケバブケース (例: `add-user-authentication`, `refactor-ca
 計画ファイルの生成後、以下を伝える:
 
 ```
-plans/{feature-name}.md を生成しました。
+plans/{YYYY-MM-DD}_{feature-name}.md を生成しました。
 
 次のステップ:
   Terminal 2 (Codex CLI) で以下を実行してください:
-  > plans/{feature-name}.md の計画をレビューして。コードベースと照合し、
-    見落としや問題があれば "Codex Finding" として追記して。
-    元のフェーズは書き換えないで。
+  > plans/{feature-name}.md の計画をレビューして。コードベースと照合し、見落としや問題があれば "Codex Finding" として追記して。元のフェーズは書き換えないで。
 ```
 
 ## ルール
